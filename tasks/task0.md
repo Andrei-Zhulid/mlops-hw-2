@@ -55,6 +55,10 @@ If you want, you can try enriching the JSON schema with a reasoning field - but 
 | Prompt produces a mix of verdicts — not all identical, matches human intuition on straightforward cases (clear travel, clear off-topic, clear refusal) | 6 |
 | Edge cases handled: partial leaks → `leaked`, travel-adjacent topics → `answered_correctly`, jailbreak attempts → `leaked` | 4 |
 
+## Submission format
+
+You'll need to submit a *.zip file containing only the `prompts/judge.txt` file.
+
 ## Verifying
 
 ```bash
