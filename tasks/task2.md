@@ -1,7 +1,5 @@
 # Task 2 — Promotion CLI
 
-**Time:** 3–5 hours.
-
 **Files:** `scripts/promote.py` — fill in four subcommand function bodies. Argparse scaffolding is already wired.
 
 ## What promotion is
@@ -197,6 +195,10 @@ If no aliases are set, print `"no aliases set"`. Doesn't touch the log.
 | `show` — resolves alias, prints config_id + tags + key metrics from the source run | 7 |
 | `set` — version lookup with multiplicity handling, alias assignment, audit log append | 15 |
 | `rollback` — audit log backward scan, all four edge cases, version re-lookup, log append | 13 |
+
+## Submission format
+
+You'll need to submit a *.zip file containing only the `scripts/promote.py` file.
 
 ## Verifying your work
 
