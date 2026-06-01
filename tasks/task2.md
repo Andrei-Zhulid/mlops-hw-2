@@ -196,10 +196,6 @@ If no aliases are set, print `"no aliases set"`. Doesn't touch the log.
 | `set` — version lookup with multiplicity handling, alias assignment, audit log append | 15 |
 | `rollback` — audit log backward scan, all four edge cases, version re-lookup, log append | 13 |
 
-## Submission format
-
-You'll need to submit a *.zip file containing only the `scripts/promote.py` file.
-
 ## Verifying your work
 
 You need at least three registered versions; run a couple of evals first:
@@ -226,11 +222,7 @@ Walk through the UX session above, then inspect `cat promotion-log.jsonl`. Verif
 
 ## Submission
 
-Submit `submissions/task2/` with:
+Submit a `*.zip` file with:
 
 1. **`promote.py`** — your implementation.
 2. **`promotion-log.jsonl`** — the log from your demo session.
-3. **`session.md`** — real session transcript: `list` → `set` → `show` → another `set` (overwrite) → `rollback` → `show` → `rollback` (fails) → trigger the multiplicity warning by re-running `eval --config v5` then `set production v5` (should warn to stdout and continue with the latest v5) → `cat promotion-log.jsonl`. Capture stdout/stderr verbatim with one-line annotations between commands.
-4. **`writeup.md`** — 4–6 sentences:
-   - What's wrong with a local-file audit log in a real production deployment? Name one concrete failure mode.
-   - If you were extending this CLI to production use, name one feature you'd add (other than policy enforcement — deliberately a non-feature here) and why.
